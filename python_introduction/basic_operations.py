@@ -1,8 +1,8 @@
-a=10
-b=5
-x=a + b
+first_number=10
+second_number=5
+x=first_number + second_number
 print(f'Addition of 10 and 5 is {x}')
-y=a - b
+y=first_number - second_number
 print(f'Subtraction of 10 and 5 is {y}')
-z=a * b
+z=first_number * second_number
 print(f'Multiplication of 10 and 5 is {z}')
