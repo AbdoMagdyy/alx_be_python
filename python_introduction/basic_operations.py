@@ -1,8 +1,8 @@
 a=10
 b=5
 x=a + b
-print(x)
+print(f'Addition of 10 and 5 is {x}')
 y=a - b
-print(y)
+print(f'Subtraction of 10 and 5 is {y}')
 z=a * b
-print(z)
+print(f'Multiplication of 10 and 5 is {z}')
