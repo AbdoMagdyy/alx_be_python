@@ -21,4 +21,4 @@ if y == "C":
 elif y == "F":
     FAHRENHEIT_TO_CELSIUS_FACTOR
 else:
-    print ('invalid')
+    print ("Invalid temperature. Please enter a numeric value.")
