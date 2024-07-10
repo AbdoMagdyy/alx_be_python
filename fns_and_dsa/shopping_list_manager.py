@@ -1,4 +1,4 @@
-def deisplay_menu():
+def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
@@ -7,7 +7,7 @@ def deisplay_menu():
 def main():
     shopping_list = []
     while True:
-        deisplay_menu
+        display_menu
         choice = input("Enter your choice: ")
         if choice == '1':
             shopping_list.append(input('Enter the item you want to add: '))
