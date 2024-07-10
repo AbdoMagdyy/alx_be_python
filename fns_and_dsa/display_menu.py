@@ -1,6 +1,5 @@
-def deisplay_menu():
-    print("Shopping List Manager")
-    print("1. Add Item")
-    print("2. Remove Item")
-    print("3. View List")
-    print("4. Exit")
+import datetime
+from datetime import datetime, timedelta, date, time
+formatted_date = date.today.strftime("%d/%m/%Y")
+print(formatted_date) 
+print(today.strftime("%d/%m/%Y"))
