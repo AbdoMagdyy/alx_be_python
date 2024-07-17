@@ -3,7 +3,7 @@ class BankAccount:
     def __init__(self,initial_balance=0):
         self.account_balance = initial_balance
 #diposit metod  (it add the money amount to the balance)
-    def diposit(self,amount):
+    def deiposit(self,amount):
         if amount > 0:
             self.account_balance += amount
         else:
