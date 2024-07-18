@@ -1,4 +1,4 @@
-def safe_division(numerator, denominator):
+def safe_divide(numerator, denominator):
     """Performs division and handles division by zero."""
     try:
         # Ensure inputs are numbers
