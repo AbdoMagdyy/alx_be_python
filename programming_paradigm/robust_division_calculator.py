@@ -13,4 +13,4 @@ def safe_divide(numerator, denominator):
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
     
-    return result
+    return f"The result of the division is{result}"
