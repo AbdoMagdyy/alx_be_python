@@ -1,10 +1,16 @@
-def safe_divide(numerator, denominator):
+def robust_division(numerator, denominator):
+    """Performs division and handles division by zero."""
     try:
-        numerator = float (numerator)
-        denominator = float (denominator)
-        Result = numerator / denominator
-        return Result
-    except ZeroDivisionError:
-        print('Error: Cannot divide by zero.')
+        # Ensure inputs are numbers
+        numerator = float(numerator)
+        denominator = float(denominator)
+        
+        # Perform division
+        result = numerator / denominator
+        
     except ValueError:
-        print('Error: Please enter numeric values only.')
+        return "Error: Both inputs must be numbers."
+    except ZeroDivisionError:
+        return "Error: Division by zero is undefined."
+    
+    return result
