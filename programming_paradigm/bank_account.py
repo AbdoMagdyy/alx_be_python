@@ -10,10 +10,10 @@ class BankAccount:
             print('Deposit amount be positive')
 #withdraw method  (it subtract the amount of the money from the balance)
     def withdraw(self,amount):
-        if amount > self.current_balance:
+        if self.current_balance < amount:
             print('Insufficient funds')
             return True
-        elif amount <= self.current_balance:
+        elif self.current_balance >= amount:
             self.current_balance -= amount
             return False
         else:
