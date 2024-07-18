@@ -9,15 +9,12 @@ class BankAccount:
         else:
             print('Deposit amount be positive')
 #withdraw method  (it subtract the amount of the money from the balance)
-    def withdraw(self,amount):
-        if self.current_balance < amount:
-            print('Insufficient funds')
-            return True
-        elif self.current_balance >= amount:
-            self.current_balance -= amount
-            return False
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"Withdrew: ${amount}")
         else:
-            print('Withdraw amount must be positive')
+            print("Insufficient funds.")
             return False
 #display method  (it display the balance of the account)
     def display_balance(self):
