@@ -14,12 +14,12 @@ class Book:
     def list_books (self):
         print(books)
 #defining EBook class
-class EBook (Book):
+class EBook(Book):
     def __init__(self, title: str, author: str , file_size : int):
         self.file_size = file_size
         super().__init__(title, author)
 #defining PrintBook class
-class PrintBook (Book):
+class PrintBook(Book):
     def __init__(self, title: str, author: str, page_count : int):
         self.page_count = page_count
         super().__init__(title, author)
