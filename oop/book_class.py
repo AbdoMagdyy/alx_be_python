@@ -12,4 +12,4 @@ class Book:
         return f"Book('{self.title}', '{self.author}', {self.year})"
     #deleting the instance using dunder del
     def __del__(self):
-        return f"Deleting '{self.year}'"
+         print(f"Deleting '{self.title}'")
