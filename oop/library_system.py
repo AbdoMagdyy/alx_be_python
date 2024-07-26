@@ -22,3 +22,18 @@ class PrintBook(Book):
             #showing the results
     def __str__(self):
         return f"PrintBook ('{self.title}' , '{self.author}' , '{self.page_count}')"
+#defining composition class (Library)
+class Library:
+    # initializing attributs
+    def __init__(self, books = None):
+        if books is None:
+            books = []
+        else:
+            self.books = books
+    #defining add_book method
+    def add_book(self,book):
+        self.books.append(book)
+    #defining the list_books function
+    def list_books(self):
+        for book in self.books:
+            print(book)
