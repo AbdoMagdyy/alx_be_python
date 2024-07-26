@@ -11,5 +11,5 @@ class Book:
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
     #deleting the instance using dunder del
-    def __del__ (self):
+    def __del__(self):
         return f"Deleting {self.title}"
