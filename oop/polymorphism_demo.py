@@ -1,3 +1,4 @@
+import math
 #creating the parent class
 class Shape:
     def area(self):
@@ -18,4 +19,4 @@ class Circle(Shape):
         self.radius = radius
     #overriding area method
     def area(self):
-        return 3.141592653589793 * self.radius ** 2
+        return math.pi * self.radius ** 2
