@@ -25,11 +25,8 @@ class PrintBook(Book):
 #defining composition class (Library)
 class Library:
     # initializing attributs
-    def __init__(self, books = None):
-        if books is None:
-            books = []
-        else:
-            self.books = books
+    def __init__(self, books):
+        self.books = []
     #defining add_book method
     def add_book(self,book):
         self.books.append(book)
