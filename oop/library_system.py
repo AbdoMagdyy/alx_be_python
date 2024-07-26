@@ -5,7 +5,7 @@ class Book:
         self.author = author
     #showing the results
     def __str__(self):
-        return f"{self.title} by {self.author}"
+        return f"Book: {self.title} by {self.author}"
 #defining EBook class
 class EBook(Book):
     def __init__(self, title: str, author: str , file_size : int):
@@ -13,7 +13,7 @@ class EBook(Book):
         super().__init__(title, author)
             #showing the results
     def __str__(self):
-        return f"{self.title} by {self.author}, File Sie: {self.file_size}"
+        return f"EBook: {self.title} by {self.author}, File Sie: {self.file_size}"
 #defining PrintBook class
 class PrintBook(Book):
     def __init__(self, title: str, author: str, page_count : int):
@@ -21,7 +21,7 @@ class PrintBook(Book):
         super().__init__(title, author)
             #showing the results
     def __str__(self):
-        return f"{self.title} by {self.author}, Page Count: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 #defining composition class (Library)
 class Library:
     # initializing attributs
